@@ -25,12 +25,12 @@ do
         j = 0;
     }
     i++;
-} while (i < parola1.Length || j != (parola2.Length - 1));
+} while (i < parola1.Length && j != parola2.Length);
 
-if (j == (parola2.Length - 1))
+if (j == parola2.Length)
 {
     messaggio = "";
 }
-Console.WriteLine("La prima stringa" + messaggio + " è contenuta nella seconda stringa");
+Console.WriteLine("La seconda stringa" + messaggio + " è contenuta nella prima stringa");
 
 
